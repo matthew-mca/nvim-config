@@ -34,6 +34,7 @@ Plug("hrsh7th/cmp-path")
 Plug("f-person/git-blame.nvim")
 
 -- DAP
+-- https://codeberg.org/mfussenegger/nvim-dap/wiki/Debug-Adapter-installation
 Plug("mfussenegger/nvim-dap")
 Plug("nvim-neotest/nvim-nio")
 Plug("rcarriga/nvim-dap-ui")
@@ -42,9 +43,7 @@ Plug("rcarriga/nvim-dap-ui")
 Plug("lukas-reineke/indent-blankline.nvim")
 
 -- Python debugging
--- TODO: Set up Python debugging
--- https://codeberg.org/mfussenegger/nvim-dap/wiki/Debug-Adapter-installation
--- Plug("mfussenegger/nvim-dap-python")
+Plug("mfussenegger/nvim-dap-python")
 
 vim.call("plug#end")
 
