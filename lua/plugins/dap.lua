@@ -37,5 +37,9 @@ vim.keymap.set("n", "<Leader>dou", dap.step_out, { desc = "DAP: Step Out" })
 vim.keymap.set("n", "<Leader>dt", dap.terminate, { desc = "DAP: Terminate Session" })
 vim.keymap.set("n", "<Leader>dr", dap.restart, { desc = "DAP: Restart Session" })
 
+vim.keymap.set("n", "<Leader>ptm", dap_python.test_method, { desc = "DAP Python: Debug Test Method" })
+vim.keymap.set("n", "<Leader>ptc", dap_python.test_class, { desc = "DAP Python: Debug Test Class" })
+
 vim.keymap.set("n", "<Leader>tb", dap.toggle_breakpoint, { desc = "DAP: Toggle Breakpoint" })
+vim.keymap.set("n", "<Leader>cb", dap.clear_breakpoints, { desc = "DAP: Clear All Breakpoints" })
 vim.keymap.set("n", "<Leader>dui", dapui.toggle, { desc = "DAP UI: Toggle" })
