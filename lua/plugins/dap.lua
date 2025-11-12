@@ -57,8 +57,13 @@ local function load_launchjs_and_continue()
 	dap.continue()
 end
 
+local function set_conditional_breakpoint()
+	dap.toggle_breakpoint(vim.fn.input("Breakpoint Condition: "))
+end
+
 -- DAP Keymaps
 vim.keymap.set("n", "<Leader>tb", dap.toggle_breakpoint, { desc = "DAP: Toggle Breakpoint" })
+vim.keymap.set("n", "<Leader>tB", set_conditional_breakpoint, { desc = "DAP: Conditional Breakpoint" })
 vim.keymap.set("n", "<Leader>cb", dap.clear_breakpoints, { desc = "DAP: Clear All Breakpoints" })
 
 vim.keymap.set("n", "<Leader>dc", load_launchjs_and_continue, { desc = "DAP: Continue" })
