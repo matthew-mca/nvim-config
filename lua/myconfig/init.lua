@@ -5,10 +5,8 @@ local function string_is_empty(s)
 end
 
 function M.setup()
-	-- Imports are usually ordered alphabetically, but not here.
-	-- This order is needed so that keymaps are set with the correct leader key.
-	require("myconfig.options")
 	require("myconfig.keymaps")
+	require("myconfig.options")
 
 	-- Attempt to load any project-specific settings
 	local project_to_load = vim.env.NVIM_PROJECT_CONFIG_NAME

@@ -1,5 +1,3 @@
-local vim = vim
-
 -- local function -- imap(input, mapping)
 --	vim.keymap.set("i", input, mapping)
 -- end
@@ -9,6 +7,10 @@ local vim = vim
 -- imap("[", "[]<Left>")
 -- imap("{", "{}<Left>")
 -- imap("(", "()<Left>")
+
+-- Set leader to the Space bar
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 -- Cheeky lil' keybind for use with oil
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
