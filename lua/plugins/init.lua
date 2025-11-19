@@ -10,6 +10,7 @@ vim.call("plug#begin")
 -- https://vimcolorschemes.com
 Plug("morhetz/gruvbox")
 Plug("folke/tokyonight.nvim")
+Plug("tomasr/molokai")
 
 -- Telescope + dependencies
 Plug("nvim-lua/plenary.nvim")
