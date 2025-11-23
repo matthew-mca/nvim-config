@@ -5,6 +5,7 @@ local function string_is_empty(s)
 end
 
 function M.setup()
+	require("myconfig.codefold").setup()
 	require("myconfig.keymaps").setup()
 	require("myconfig.options").setup()
 
